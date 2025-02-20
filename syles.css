@@ -1,7 +1,32 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 20px 100px ;
+    border: solid 1px;
+    border-color: lightgrey;
 }
 h1, footer {
+    padding: 20px;
     background-color: rgb(241, 237, 237);
+    
+}
+main {
+    padding: 20px;
+}
+p {
+    font-size: 10px;
+    color: gray;
+}
+i {
+    color: white;
+    
+}
+.creditCard {
+    padding: 5px;
+    padding-left: 10px;
+    width: 16em;
+    background-color: gray;
+    border-radius: 5px;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
