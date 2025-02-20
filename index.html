@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./syles.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,31 +17,72 @@
     </header>
     <main>
         <div class="conatinerSuper">
-            <div class="">Some fiels are missing</div>  <!-- aqui va un mensaje de color -->
-            <div>
-                <div></div> <!-- aca van inputs -->
-                <div></div>
-                <div></div>
+            <!-- aqui va un mensaje de color -->
+            <div class="alert alert-danger" role="alert">
+                Some fielcs are missing
+              </div>
+            <div class="row g-4">
+                <div class="col-4">
+                    <label for="example" class="form-label">Card #</label>
+                    <input type="text" class="form-control" id="example" placeholder="XXXXXXXXXXXXXX">
+                </div>
+                <div class="col-4">
+                    <label for="example" class="form-label">CVC #</label>
+                    <input type="text" class="form-control" id="example" placeholder="0000">
+                </div>
+                <div class="col-4">
+                    <label for="example" class="form-label">Amount</label>
+                    <input type="text" class="form-control" id="example" placeholder="Amount">
+                </div>
             </div>
         </div>
         <div class="conatinerInf"> <!--  -->
-            <div class="subContainerLeft">
-                <div></div> <!-- aca van inputs -->
-                <div></div>
-                <div></div>
+            <div class="subContainerPersonData">
+                <div class="row g-4">
+                    <div class="col-6">
+                        <label for="example" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="example" placeholder="">
+                    </div>
+                    <div class="col-6">
+                        <label for="example" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="example" placeholder="">
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-6">
+                        <label for="example" class="form-label">City</label>
+                        <input type="text" class="form-control" id="example" placeholder="">
+                    </div>
+                    <div class="col-3">
+                        <label for="example" class="form-label">State</label>
+                        <input type="text" class="form-control" id="example" placeholder="Pick a state">
+                    </div>
+                    <div class="col-3">
+                        <label for="example" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="example" placeholder="">
+                    </div>
+                </div>     
             </div>
-            <div class="subContainerRigth">
-                <div></div> <!-- aca van inputs -->
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="subContainerMessage">
+                <div class="row g-4">
+                    <div class="col-6">
+                        <div>We accept:</div>
+                    </div>
+                    <div class="col-6">
+                        <label for="example" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>                        <p>Add any Notes here.</p>
+                    </div>
+                </div>   
+                
             </div>
         </div>
     </main>
     <footer>
-        <div>
-            <button></button>
-            <button></button>
+        <div class="row g-4">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" class="btn btn-secondary">Cancel</button>
+                <button type="button" class="btn btn-primary">Send</button>  
+            </div>
         </div>
     </footer>
 
